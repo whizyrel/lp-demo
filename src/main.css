@@ -1,12 +1,20 @@
 :root {
   --side-background-size: 80%;
   --side-background-url: url('/src/assets/imgs/main_side-background.png');
+  --default-font-url: url('/src/assets/fonts/effra/Effra_Std_Lt.ttf');
+  --text-color-main: red;
+}
+
+@font-face {
+  font-family: "Effra Light";
+  src: var(--default-font-url) format('ttf'),;
 }
 
 body {
   width: 100vw;
   height: 100vh;
   /* overflow-x: hidden; */
+  font-family: 'Effra Light';
 }
 
 .app__container {
