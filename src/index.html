@@ -11,10 +11,38 @@
 <body>
   <main class="app__container d-flex w-100 h-100">
     <div class="app__main__side-background d-flex"></div>
-    <div class="app__main__login-container d-flex px-5">
-      <div class="app__main__login__welcome-msg d-flex my-auto">
+    <div class="app__main__login-container d-flex mx-auto px-5">
+      <div class="app__main__login__welcome-msg d-flex mt-auto">
         <p class="p-0 m-0 app__main__login__welcome-msg__main">Welcome!</p>
         <p class="app__main__login__welcome-msg__sub">Please enter your details to continue</p>
+      </div>
+
+      <form class="app__main__login-details__container d-flex mt-4 p-0 mx-0">
+        <div class="app__main__login-details__input-group d-flex mb-2">
+          <span class="app__main__login-details__input-text">
+            Email Address
+          </span>
+          <input class="app__main__login-details__input-element" type="email">
+        </div>
+
+        <div class="app__main__login-details__input-group d-flex mb-2">
+          <span class="app__main__login-details__input-text">
+            Password
+          </span>
+          <input class="app__main__login-details__input-element" type="password">
+        </div>
+
+        <button class="app__main__login__button-default mt-3 p-0">Sign in</button>
+      </form>
+
+      <div class="app__main__recover__signup-container d-flex mt-5 mb-auto">
+        <p class="app__main__recover__forgot-text p-0 m-0">
+          Forgot password?
+        </p>
+
+        <p class="app__main__recover__signup-text mt-3">
+          Are you new here? <a href="http://">Sign Up</a>
+        </p>
       </div>
     </div>
   </main>

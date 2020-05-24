@@ -22,9 +22,21 @@ body {
   font-family: 'Effra Light';
 }
 
+a, a:hover {
+  color: var(--text-color-main);
+  cursor: pointer;
+}
+
+a:hover,
+.app__main__recover__forgot-text:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .app__main__side-background,
 .app__main__login-container,
 .app__main__login-details__container,
+.app__main__recover__signup-container {
   flex-direction: column;
 }
 
@@ -87,6 +99,17 @@ body {
   height: 45px;
   color: #ffffff;
   font-weight: bold;
+}
+
+.app__main__recover__forgot-text {
+  cursor: pointer;
+}
+
+.app__main__recover__forgot-text,
+.app__main__recover__signup-text {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
