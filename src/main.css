@@ -1,0 +1,29 @@
+:root {
+  --side-background-size: 80%;
+  --side-background-url: url('/src/assets/imgs/main_side-background.png');
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* overflow-x: hidden; */
+}
+
+.app__container {
+  flex-direction: row;
+}
+
+.app__main__side-background {
+  width: var(--side-background-size);
+  height: inherit;
+  flex-direction: column;
+  background-image: var(--side-background-url);
+  background-size: cover;
+}
+
+
+.app__main__login-container {
+  flex-direction: column;
+  height: inherit;
+  width: inherit;
+}
