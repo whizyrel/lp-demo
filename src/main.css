@@ -3,11 +3,16 @@
   --side-background-url: url('/src/assets/imgs/main_side-background.png');
   --default-font-url: url('/src/assets/fonts/effra/Effra_Std_Lt.ttf');
   --text-color-main: #a70918;
+  --light-grey: #cecece;
 }
 
 @font-face {
   font-family: "Effra Light";
   src: var(--default-font-url) format('ttf'),;
+}
+
+* {
+  outline: none;
 }
 
 body {
@@ -18,7 +23,8 @@ body {
 }
 
 .app__main__side-background,
-.app__main__login-container {
+.app__main__login-container,
+.app__main__login-details__container,
   flex-direction: column;
 }
 
@@ -54,7 +60,40 @@ body {
   font-weight: 650;
 }
 
+.app__main__login-details__input-group {
+  flex-direction: column;
+  width: 100%;
+}
+
+.app__main__login-details__input-text {
+  font-weight: 650;
+  color: var(--text-color-main);
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.app__main__login-details__input-element {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: thin solid var(--light-grey);
+}
+
+.app__main__login__button-default {
+  border-radius: 52px;
+  border: none;
+  background-color: var(--text-color-main);
+  height: 45px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 @media (min-width: 576px) {
+  .app__main__login-container {
+    padding: 0 8em!important;
+  }
+
   .app__main__login__welcome-msg__main {
     font-size: 50px;
   }
