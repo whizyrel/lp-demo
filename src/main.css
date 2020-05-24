@@ -2,7 +2,7 @@
   --side-background-size: 80%;
   --side-background-url: url('/src/assets/imgs/main_side-background.png');
   --default-font-url: url('/src/assets/fonts/effra/Effra_Std_Lt.ttf');
-  --text-color-main: red;
+  --text-color-main: #a70918;
 }
 
 @font-face {
@@ -17,6 +17,11 @@ body {
   font-family: 'Effra Light';
 }
 
+.app__main__side-background,
+.app__main__login-container {
+  flex-direction: column;
+}
+
 .app__container {
   flex-direction: row;
 }
@@ -24,14 +29,33 @@ body {
 .app__main__side-background {
   width: var(--side-background-size);
   height: inherit;
-  flex-direction: column;
   background-image: var(--side-background-url);
   background-size: cover;
 }
 
-
 .app__main__login-container {
-  flex-direction: column;
   height: inherit;
   width: inherit;
+}
+
+.app__main__login__welcome-msg {
+  flex-direction: column;
+}
+
+.app__main__login__welcome-msg__main {
+  line-height: normal;
+  font-size: 30px;
+  font-weight: 650;
+  color: var(--text-color-main);
+}
+
+.app__main__login__welcome-msg__sub {
+  font-size: 15px;
+  font-weight: 650;
+}
+
+@media (min-width: 576px) {
+  .app__main__login__welcome-msg__main {
+    font-size: 50px;
+  }
 }
