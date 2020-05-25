@@ -46,15 +46,31 @@
     </div>
 
     <div class="d-flex w-100 app__search--input__container">
-      <input class="app__search--input w-100 app__border--bottom__left__radius--56 app__border--bottom__right__radius--56 
-      app__border--top__left__radius--56 app__border--top__right__radius--56" type="text" placeholder="Search product">
+      <!-- remove these on click -->
+      <!-- 
+        app__border--bottom__right__radius--56
+        app__border--bottom__left__radius--56
+      -->
+      <!-- replace app__search--default__box-shadow with app__search--active__box-shadow on click -->
+      <input class="app__search--input w-100 
+      app__border--top__left__radius--56 app__border--top__right__radius--56 app__search--active__box-shadow" type="text" placeholder="Search product">
 
       <img class="app__search--input__icon app__search--input__icon--align__left ml-2 my-auto" src="/src/assets/icons/svgs/search_24px_rounded-dark.svg" alt="search icon">
       <img class="app__search--input__icon app__search--input__icon--align__right app__search--input__icon--camera my-auto" src="/src/assets/icons/svgs/camera.svg" alt="camera icon">
       <img class="app__search--input__icon app__search--input__icon--align__right app__search--input__icon--barcode" src="/src/assets/icons/svgs/barcode.svg" alt="barcode icon">
     </div>
 
-    <div class="d-flex w-100 mb-auto app__search--results__container"></div>
+    <!-- add app__search--default__box-shadow on active -->
+    <div class="d-flex w-100 mb-auto pt-2 pb-3 app__search--results__container  app__border--bottom__left__radius--56 app__border--bottom__right__radius--56 app__search--default__box-shadow">
+      <div class="d-flex w-100 app__search__result--item py-1">
+        <span class="ml-3">Wisdom</span>
+        <span class="font-weight-bold ml-3">Toothbrush</span>
+      </div>
+      <div class="d-flex w-100 app__search__result--item py-1">
+        <span class="ml-3">Dabur</span>
+        <span class="font-weight-bold ml-3">Toothpaste</span>
+      </div>
+    </div>
   </main>
 
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
