@@ -40,6 +40,7 @@
   </nav>
 
   <main class="d-flex w-100 app__main--container">
+    <img class="app__cart--icon" src="/src/assets/icons/svgs/shopping-cart.svg" alt="cart icon">
     <div class="app__search--brand d-flex w-100 mb-2 mt-auto text-center">
       <p class="p-0 m-0 text-capitalize mx-auto">living proofs</p>
       <span class="p-0 mb-1 m-0">Bakery & Supermarket</span>
@@ -63,12 +64,18 @@
     <!-- add app__search--default__box-shadow on active -->
     <div class="d-flex w-100 mb-auto pt-2 pb-3 app__search--results__container  app__border--bottom__left__radius--56 app__border--bottom__right__radius--56 app__search--default__box-shadow">
       <div class="d-flex w-100 app__search__result--item py-1">
-        <span class="ml-3">Wisdom</span>
-        <span class="font-weight-bold ml-3">Toothbrush</span>
+        <div class="d-flex">
+          <span class="ml-3">Wisdom</span>
+          <span class="font-weight-bold ml-3">Toothbrush</span>
+        </div>
+        <img class="ml-auto mr-3 my-auto app__search__result--item__icon " src="/src/assets/icons/svgs/shopping-cart-add.svg" alt="item icon">
       </div>
       <div class="d-flex w-100 app__search__result--item py-1">
-        <span class="ml-3">Dabur</span>
-        <span class="font-weight-bold ml-3">Toothpaste</span>
+        <div class="d-flex">
+          <span class="ml-3">Dabur</span>
+          <span class="font-weight-bold ml-3">Toothpaste</span>
+        </div>
+        <img class="ml-auto mr-3 my-auto app__search__result--item__icon" src="/src/assets/icons/svgs/shopping-cart-add.svg" alt="item icon">
       </div>
     </div>
   </main>
