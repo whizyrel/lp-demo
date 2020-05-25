@@ -64,18 +64,34 @@
     <!-- add app__search--default__box-shadow on active -->
     <div class="d-flex w-100 mb-auto pt-2 pb-3 app__search--results__container  app__border--bottom__left__radius--56 app__border--bottom__right__radius--56 app__search--default__box-shadow">
       <div class="d-flex w-100 app__search__result--item py-1">
-        <div class="d-flex">
+        <div class="d-flex app__search__result--item__details">
           <span class="ml-3">Wisdom</span>
           <span class="font-weight-bold ml-3">Toothbrush</span>
         </div>
-        <img class="ml-auto mr-3 my-auto app__search__result--item__icon " src="/src/assets/icons/svgs/shopping-cart-add.svg" alt="item icon">
+
+        <div class="d-flex ml-auto app__items__quantity--container d-flex">
+          <img class="app__search__result--item__quantity--control__icon my-auto" src="/src/assets/icons/svgs/minus.svg" alt="minus icon">
+          <input class="app__search__result--item__quantity my-auto mx-2 p-2" type="text">
+          <img class="app__search__result--item__quantity--control__icon my-auto" src="/src/assets/icons/svgs/plus.svg" alt="plus icon">
+        </div>
+
+        <img class="mx-3 my-auto app__search__result--item__icon" src="/src/assets/icons/svgs/shopping-cart-add.svg" alt="item icon">
       </div>
+
       <div class="d-flex w-100 app__search__result--item py-1">
-        <div class="d-flex">
+        <div class="d-flex app__search__result--item__details">
           <span class="ml-3">Dabur</span>
           <span class="font-weight-bold ml-3">Toothpaste</span>
         </div>
-        <img class="ml-auto mr-3 my-auto app__search__result--item__icon" src="/src/assets/icons/svgs/shopping-cart-add.svg" alt="item icon">
+        <div class="d-flex ml-auto app__items__quantity--container d-flex">
+          <img class="app__search__result--item__quantity--control__icon my-auto" src="/src/assets/icons/svgs/minus.svg"
+            alt="minus icon">
+          <input class="app__search__result--item__quantity my-auto mx-2 p-2" type="text">
+          <img class="app__search__result--item__quantity--control__icon my-auto" src="/src/assets/icons/svgs/plus.svg"
+            alt="plus icon">
+        </div>
+
+        <img class="mx-3 my-auto app__search__result--item__icon" src="/src/assets/icons/svgs/shopping-cart-add.svg" alt="item icon">
       </div>
     </div>
   </main>

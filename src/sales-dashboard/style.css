@@ -21,7 +21,7 @@ body {
 .app__main--container,
 .app__search--brand,
 .app__search--results__container,
-.app__search__result--item div {
+.app__search__result--item__details {
   flex-direction: column;
 }
 
@@ -110,6 +110,12 @@ body {
   z-index: -1000;
 }
 
+.app__cart--icon  {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+}
+
 .app__search--brand p {
   font-size: 50px;
   font-weight: 700;
@@ -177,10 +183,26 @@ body {
   cursor: pointer;
 }
 
-.app__cart--icon  {
-  position: absolute;
-  top: 3%;
-  right: 5%;
+.app__items__quantity--container {
+  flex-direction: row;
+  width: fit-content;
+  height: inherit;
+}
+
+.app__search__result--item__quantity--control__icon {
+  height: 15px;
+  width: 15px;
+}
+
+.app__search__result--item__quantity {
+  width: 40px;
+  text-align: center;
+  font-weight: 650;
+  border-style: solid;
+  border-color: var(--theme-dark-red);
+  border-width: 1px;
+  border-radius: 56px;
+  height: 80%;
 }
 
 @media (min-width: 576px) {
