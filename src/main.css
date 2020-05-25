@@ -2,8 +2,11 @@
   --side-background-size: 80%;
   --side-background-url: url('/src/assets/imgs/main_side-background.png');
   --default-font-url: url('/src/assets/fonts/effra/Effra_Std_Lt.ttf');
-  --text-color-main: #a70918;
-  --light-grey: #cecece;
+  --theme-text-color-main: #a70918;
+  --theme-button-color-main: #a70918;
+  --theme-sidebar-color-main: #a70918;
+  --theme-dark-red: #520101;
+  --theme-light-grey: #cecece;
 }
 
 @font-face {
@@ -23,7 +26,7 @@ body {
 }
 
 a, a:hover {
-  color: var(--text-color-main);
+  color: var(--theme-text-color-main);
   cursor: pointer;
 }
 
@@ -64,7 +67,7 @@ a:hover,
   line-height: normal;
   font-size: 30px;
   font-weight: 650;
-  color: var(--text-color-main);
+  color: var(--theme-text-color-main);
 }
 
 .app__main__login__welcome-msg__sub {
@@ -79,7 +82,7 @@ a:hover,
 
 .app__main__login-details__input-text {
   font-weight: 650;
-  color: var(--text-color-main);
+  color: var(--theme-text-color-main);
   font-weight: bold;
   font-size: 13px;
   line-height: 23px;
@@ -89,13 +92,13 @@ a:hover,
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: thin solid var(--light-grey);
+  border-bottom: thin solid var(--theme-light-grey);
 }
 
 .app__main__login__button-default {
   border-radius: 52px;
   border: none;
-  background-color: var(--text-color-main);
+  background-color: var(--theme-button-color-main);
   height: 45px;
   color: #ffffff;
   font-weight: bold;
