@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Dashboard</title>
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/src/main.css">
+</head>
+<body>
+  <nav class="app__sidebar app__sidebar--collapsed d-flex p-0 m-0">
+    <div class="app__user--container d-flex">
+      <div class="app__user--image__container app__user--image__container--collapsed d-flex mt-3 mx-auto">
+        <img class="m-auto" src="/src/assets/icons/svgs/person_24px_rounded.svg" alt="person image">
+      </div>
+      <!-- <p class="mt-2 mb-3 font-weight-bold mx-auto py-0 text-center">Abeji Lukman Chidinma</p> -->
+    </div>
+
+    <div class="app__sidebar--menu d-flex">
+      <div class="d-flex app__sidebar--menu__group mt-auto py-2">
+        <img class="mx-2 my-auto" src="/src/assets/icons/svgs/dashboard_24px_rounded.svg" alt="sidebar icon">
+        <p class="p-0 my-0 w-100 d-none">dashboard</p>
+      </div>
+      <div class="d-flex app__sidebar--menu__group mb-auto py-2">
+        <img class="mx-2 my-auto" src="/src/assets/icons/svgs/bar_chart_24px_rounded.svg" alt="sidebar icon">
+        <p class="p-0 my-0 w-100 d-none">sales</p>
+      </div>
+
+      <!-- control buttons -->
+      <div class="d-flex mt-2 mb-3 app__controls--container">
+        <!-- settings: synchronize button... -->
+        <img class="mx-auto p-1" src="/src/assets/icons/svgs/settings_24px_rounded.svg" alt="control icon">
+           <!-- toggle sidebar collapsed || expanded -->
+        <img class="mx-auto p-1" src="/src/assets/icons/svgs/chevron-right.svg">
+        <!-- <img class="mx-auto p-1" src="/src/assets/icons/svgs/chevron-left.svg"> -->
+      </div>
+    </div>
+  </nav>
+
+
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

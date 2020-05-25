@@ -1,0 +1,92 @@
+:root {
+  --sidebar-width-collapsed: 65px;
+  --sidebar-width-expanded: 180px;
+  --user-image-size-expanded: 100px;
+  --user-image-size-collapsed: 50px;
+  --sidebar-link-size: 30px;
+  --sidebar-control-icon-size: 25px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.app__sidebar,
+.app__user--container,
+.app__controls--container {
+  flex-direction: column;
+}
+
+.app__sidebar {
+  background-color: var(--theme-sidebar-color-main);
+  /* border-radius: 0 10px 10px 0; */
+  height: 100%;
+}
+
+.app__sidebar--collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.app__sidebar--expanded {
+  width: var(--sidebar-width-expanded);
+}
+
+.app__user--container {
+  flex-direction: column;
+  min-height: 25%;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.app__user--image__container {
+  background-color: var(--theme-light-grey);
+  border-radius: 50%;
+}
+
+.app__user--image__container--collapsed {
+  width: var(--user-image-size-collapsed); /* -[collapsed] || -[expanded] */
+  height: var(--user-image-size-collapsed); /* -[collapsed] || -[expanded] */
+}
+
+.app__user--image__container--expanded {
+  width: var(--user-image-size-expanded); /* -[collapsed] || -[expanded] */
+  height: var(--user-image-size-expanded); /* -[collapsed] || -[expanded] */
+}
+
+.app__sidebar--menu {
+  flex-direction: column;
+  height: 100%;
+}
+
+.app__sidebar--menu__group {
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.app__sidebar--menu__group:hover {
+  background-color: var(--theme-dark-red);
+}
+
+.app__sidebar--menu img {
+  width: var(--sidebar-link-size);
+  height: var(--sidebar-link-size);
+}
+
+.app__controls--container img {
+  color: #ffffff;
+  width: var(--sidebar-control-icon-size);
+  height: var(--sidebar-control-icon-size);
+  animation: 3s ease-in 1s 2 reverse both paused slidein;
+}
+
+.app__controls--container img:hover {
+  border-radius: 50%;
+  background: var(--theme-dark-red);
+  align-items: center;
+}
+
