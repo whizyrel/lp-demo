@@ -39,7 +39,8 @@ body {
 
 .app__user--container {
   flex-direction: column;
-  min-height: 25%;
+  min-height: fit-content;
+  max-height: 25%;
   color: #ffffff;
   box-sizing: border-box;
 }
