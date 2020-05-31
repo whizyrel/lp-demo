@@ -126,7 +126,7 @@ body {
   border: none;
   transition: all .5s ease-in;
   height: 50px;
-  padding: 0 100px 0 40px;
+  padding: 0 105px 0 45px;
   z-index: 200;
 }
 
@@ -155,6 +155,23 @@ body {
   box-shadow: 0 -.8px 2px .3px var(--theme-light-grey);
 }
 
+.app__divider {
+  position: absolute;
+  width: 1px;
+  height: 4%;
+  z-index: 200;
+  background-color: #c3c3c3;
+  align-self: center;
+}
+
+.app__divider--left__35 {
+  margin-left: 35px;
+}
+
+.app__divider--right__cancel--icon__35 {
+  right: calc(4rem + 77px)
+}
+
 .app__search--input__icon {
   position: absolute;
   width: var(--sidebar-control-icon-size);
@@ -173,7 +190,7 @@ body {
 }
 
 .app__search--input__icon--cancel__search {
-  right: calc(4rem + 80px);
+  right: calc(4rem + 85px);
   width: 15px;
   height: 15px;
 }
@@ -220,8 +237,12 @@ body {
     padding: 0 8rem;
   }
 
+  .app__divider--right__cancel--icon__35 {
+    right: calc(8rem + 77px)
+  }
+
   .app__search--input__icon--cancel__search {
-    right: calc(8rem + 80px);
+    right: calc(8rem + 85px);
   }
 
   .app__search--input__icon--camera {
