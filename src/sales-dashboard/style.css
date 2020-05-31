@@ -27,13 +27,12 @@ body {
 
 .app__sidebar {
   background-color: var(--theme-sidebar-color-main);
-  /* border-radius: 0 10px 10px 0; */
   height: 100%;
 }
 
 .app__sidebar--collapsed {
   width: var(--sidebar-width-collapsed);
-  box-shadow: 0.5px 0 5px 1px #c3c3c3c3;
+  box-shadow: 0.5px 0 2px 1px #c3c3c3c3;
 }
 
 .app__sidebar--expanded {
