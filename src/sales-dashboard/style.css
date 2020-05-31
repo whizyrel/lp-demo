@@ -144,7 +144,11 @@ body {
 }
 
 .app__search--default__box-shadow {
-  box-shadow: 0 0 2px .5px var(--theme-light-grey);
+  box-shadow: 0 0 1.5px .3px var(--theme-light-grey);
+}
+
+.app__search--default__box-shadow:hover {
+  box-shadow: 0 0 2px 1.5px #e8e8e8;
 }
 
 .app__search--active__box-shadow {
