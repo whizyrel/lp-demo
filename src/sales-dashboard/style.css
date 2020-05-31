@@ -172,7 +172,7 @@ body {
   margin-left: 35px;
 }
 
-.app__divider--right__cancel--icon__35 {
+.app__divider--right__cancel--icon {
   right: calc(4rem + 77px)
 }
 
@@ -241,7 +241,7 @@ body {
     padding: 0 8rem;
   }
 
-  .app__divider--right__cancel--icon__35 {
+  .app__divider--right__cancel--icon {
     right: calc(8rem + 77px)
   }
 
