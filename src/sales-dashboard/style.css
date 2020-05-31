@@ -130,6 +130,10 @@ body {
   z-index: 200;
 }
 
+.app__search--input__container {
+  margin-bottom: auto;
+}
+
 .app__search--results__container {
   position: relative;
   width: inherit;
