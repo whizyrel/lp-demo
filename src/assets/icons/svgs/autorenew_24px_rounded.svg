@@ -1,5 +1,62 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="autorenew_24px">
-<path id="icon/action/autorenew_24px" fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 12.9831V9.99974C14.4834 9.99974 10.0001 14.4831 10.0001 19.9997C10.0001 21.3164 10.2501 22.5997 10.7334 23.7497C10.9834 24.3497 10.8001 25.0331 10.3501 25.4831C9.50008 26.3331 8.06675 26.0331 7.61675 24.9164C7.00008 23.3997 6.66675 21.7331 6.66675 19.9997C6.66675 12.6331 12.6334 6.66641 20.0001 6.66641V3.68307C20.0001 2.93307 20.9001 2.5664 21.4167 3.08307L26.0667 7.73307C26.4001 8.06641 26.4001 8.58307 26.0667 8.91641L21.4167 13.5664C20.9001 14.0997 20.0001 13.7331 20.0001 12.9831ZM29.2667 16.2497C29.0167 15.6664 29.2 14.9664 29.65 14.5164C30.5 13.6664 31.9334 13.9664 32.3834 15.0831C33 16.5997 33.3334 18.2664 33.3334 19.9997C33.3334 27.3664 27.3667 33.3331 20 33.3331V36.3331C20 37.0664 19.1 37.4331 18.5834 36.9164L13.9334 32.2664C13.6001 31.9331 13.6001 31.4164 13.9334 31.0831L18.5834 26.4331C19.1 25.8997 20 26.2664 20 27.0164V29.9997C25.5167 29.9997 30 25.5164 30 19.9997C30 18.6831 29.7334 17.4164 29.2667 16.2497Z" fill="white"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40"
+   height="40"
+   viewBox="0 0 40 40"
+   fill="none"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="autorenew_24px_rounded.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="816"
+     inkscape:window-height="480"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="5.9"
+     inkscape:cx="20"
+     inkscape:cy="20"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <g
+     id="autorenew_24px"
+     style="fill:#000000">
+    <path
+       id="icon/action/autorenew_24px"
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="M20.0001 12.9831V9.99974C14.4834 9.99974 10.0001 14.4831 10.0001 19.9997C10.0001 21.3164 10.2501 22.5997 10.7334 23.7497C10.9834 24.3497 10.8001 25.0331 10.3501 25.4831C9.50008 26.3331 8.06675 26.0331 7.61675 24.9164C7.00008 23.3997 6.66675 21.7331 6.66675 19.9997C6.66675 12.6331 12.6334 6.66641 20.0001 6.66641V3.68307C20.0001 2.93307 20.9001 2.5664 21.4167 3.08307L26.0667 7.73307C26.4001 8.06641 26.4001 8.58307 26.0667 8.91641L21.4167 13.5664C20.9001 14.0997 20.0001 13.7331 20.0001 12.9831ZM29.2667 16.2497C29.0167 15.6664 29.2 14.9664 29.65 14.5164C30.5 13.6664 31.9334 13.9664 32.3834 15.0831C33 16.5997 33.3334 18.2664 33.3334 19.9997C33.3334 27.3664 27.3667 33.3331 20 33.3331V36.3331C20 37.0664 19.1 37.4331 18.5834 36.9164L13.9334 32.2664C13.6001 31.9331 13.6001 31.4164 13.9334 31.0831L18.5834 26.4331C19.1 25.8997 20 26.2664 20 27.0164V29.9997C25.5167 29.9997 30 25.5164 30 19.9997C30 18.6831 29.7334 17.4164 29.2667 16.2497Z"
+       fill="white"
+       style="fill:#000000" />
+  </g>
 </svg>

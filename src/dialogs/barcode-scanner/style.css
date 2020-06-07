@@ -1,23 +1,40 @@
+:root {
+  --dialog-max-width: 320px;
+  --dialog-min-width: 300px;
+  --dialog-min-height: 70%;
+  --dialog-max-height: 575px;
+  --dialog-control-icon-size-small: 10px;
+}
+
 .app__wide {
   height: 100vh;
+}
+
+.app__wide,
+.app__scanner--main__loading--container,
+.app__scanner--result__item,
+.app__scanner--result__item--quantity--container {
   flex-direction: row;
 }
 
 .app__scanner--dialog__container {
-  flex-direction: column;
-  width: 300px;
-  min-width: 300px;
-  max-width: 300px;
+  min-width: var(--dialog-min-width);
+  max-width: var(--dialog-max-width);
   height: 70%;
-  min-height: 70%;
-  max-height: 70%;
+  max-height: var(--dialog-max-height);
   box-shadow: 0 0 3px 1px #e3e3e3;
   border-radius: 7px;
 }
 
+.app__scanner--dialog__container,
+.app__scanner--main__container,
+.app__scanner--result__items--container,
+.app__scanner--result__item--description {
+  flex-direction: column;
+}
+
 .app__scanner--dialog__banner--container {
   height: 35%;
-  /* border-bottom: .5px solid #eaeaea; */
   background-image: url('/src/assets/imgs/3156482.jpg');
   background-size: cover;
   background-position: center;
@@ -29,13 +46,56 @@
   object-fit: contain;
 }
 
-.app__scanner--main__container {
-  /* height: 70%; */
-  flex-direction: column;
-}
-
 .app__scanner--main__loading--container {
-  flex-direction: row;
   font-size: 15px;
   color: #757575;
+}
+
+.app__scanner--main__search-results--controls {
+  border-bottom: .5px solid #ececec;
+}
+
+.app__scanner--main__search-results--controls__icon {
+  width: var(--dialog-control-icon-size-small);
+  height: var(--dialog-control-icon-size-small);
+  cursor: pointer;
+}
+
+.app__scanner--result__item:hover {
+  box-shadow: 0 1px 1px 1px #eaeaea;
+}
+
+.app__scanner--result__items--container {
+  height: inherit;
+  max-height: 100%;
+  font-size: 12px;
+  overflow-y: auto;
+}
+
+.app__scanner--result__item--description {
+  font-size: 10px;
+}
+
+.app__scanner--result__item--description span {
+  line-height: fit-content;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.app__scanner--result__item--quantity--control__icon,
+.app__search__result--item__add--icon {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.app__scanner--result__item--quantity {
+  width: 40px;
+  text-align: center;
+  font-weight: 650;
+  border-style: solid;
+  border-color: var(--theme-dark-red);
+  border-width: 1px;
+  border-radius: 56px;
+  max-height: 30px;
 }
