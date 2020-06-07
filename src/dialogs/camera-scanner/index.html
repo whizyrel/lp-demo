@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barcode Scanner Dialog</title>
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/main.css">
+  <link rel="stylesheet" href="/src/dialogs/barcode-scanner/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ignore -->
+  <div class="app__wide d-flex w-100">
+    <!-- main -->
+    <div class="app__scanner--dialog__container d-flex m-auto">
+      <div class="app__scanner--dialog__banner--container d-flex py-2">
+        <img class="app__scanner--dialog__banner w-100 h-100 m-auto" src="/src/assets/imgs/svgs/camera.svg" alt="banner image">
+      </div>
+
+      <div class="d-flex app__scanner--main__container w-100 h-100">
+        <!-- put scanner indeterminate progress-bar here -->
+
+        <!-- not needed -->
+        <div class="app__scanner--main__search-results--controls w-100 d-flex p-2">
+          <img alt="item icon" class="ml-auto my-auto app__search__result--item__add--icon" src="/src/assets/icons/svgs/shopping-cart-add.svg">
+          <img class="app__scanner--main__search-results--controls__icon my-auto ml-2" src="/src/assets/icons/svgs/cancel.svg" alt="clear all">
+        </div>
+
+        <div class="d-flex w-100 app__scanner--result__items--container pb-3">
+          <div class="d-flex w-100 app__scanner--result__item">
+            <div class="d-flex app__scanner--result__item--description">
+              <span class="ml-3 mt-1">Hypo Company</span>
+              <span class="ml-3 mb-1 font-weight-bold">Hypo Clean</span>
+            </div>
+
+            <span class="ml-auto my-auto font-weight-bold">0 left in stock</span>
+
+            <div class="d-flex ml-2 my-auto app__scanner--result__item--quantity--container d-flex">
+              <img alt="minus icon" class="app__scanner--result__item--quantity--control__icon my-auto" src="/src/assets/icons/svgs/minus.svg">
+              <input class="app__scanner--result__item--quantity my-auto mx-2 p-2" min="1" type="text" value="1">
+              <img alt="plus icon" class="app__scanner--result__item--quantity--control__icon my-auto" src="/src/assets/icons/svgs/plus.svg">
+            </div>
+
+            <img class="app__scanner--main__search-results--controls__icon my-auto ml-2 mr-2" src="/src/assets/icons/svgs/cancel.svg" alt="delete">
+          </div>
+
+          <div class="d-flex w-100 app__scanner--result__item">
+            <div class="d-flex app__scanner--result__item--description">
+              <span class="ml-3 mt-1">Cadbury Plc.</span>
+              <span class="ml-3 mb-1 font-weight-bold">Bourn Vita</span>
+            </div>
+
+            <span class="ml-auto my-auto font-weight-bold">0 left in stock</span>
+
+            <div class="d-flex ml-2 my-auto app__scanner--result__item--quantity--container d-flex">
+              <img alt="minus icon" class="app__scanner--result__item--quantity--control__icon my-auto" src="/src/assets/icons/svgs/minus.svg">
+              <input class="app__scanner--result__item--quantity my-auto mx-2 p-2" min="1" type="text" value="1">
+              <img alt="plus icon" class="app__scanner--result__item--quantity--control__icon my-auto" src="/src/assets/icons/svgs/plus.svg">
+            </div>
+
+            <img class="app__scanner--main__search-results--controls__icon my-auto ml-2 mr-2" src="/src/assets/icons/svgs/cancel.svg" alt="delete">
+          </div>
+        </div>
+
+        <!-- search preloader -->
+        <!-- <div class="app__scanner--main__loading--container d-flex w-100 h-100">
+          <img src="/src/assets/icons/svgs/search_24px_rounded-dark.svg" alt="search icon" class="my-auto ml-auto">
+          <span class="d-flex font-weight-bold ml-2 mr-auto my-auto">Searching...</span>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
