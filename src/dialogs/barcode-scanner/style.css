@@ -1,0 +1,41 @@
+.app__wide {
+  height: 100vh;
+  flex-direction: row;
+}
+
+.app__scanner--dialog__container {
+  flex-direction: column;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 70%;
+  min-height: 70%;
+  max-height: 70%;
+  box-shadow: 0 0 3px 1px #e3e3e3;
+  border-radius: 7px;
+}
+
+.app__scanner--dialog__banner--container {
+  height: 35%;
+  /* border-bottom: .5px solid #eaeaea; */
+  background-image: url('/src/assets/imgs/3156482.jpg');
+  background-size: cover;
+  background-position: center;
+  background-clip: border-box;
+}
+
+.app__scanner--dialog__banner {
+  object-position: center;
+  object-fit: contain;
+}
+
+.app__scanner--main__container {
+  /* height: 70%; */
+  flex-direction: column;
+}
+
+.app__scanner--main__loading--container {
+  flex-direction: row;
+  font-size: 15px;
+  color: #757575;
+}

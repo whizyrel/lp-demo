@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barcode Scanner Dialog</title>
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ignore -->
+  <div class="app__wide d-flex w-100">
+    <!-- main -->
+    <div class="app__scanner--dialog__container d-flex m-auto">
+      <div class="app__scanner--dialog__banner--container d-flex py-2">
+        <img class="app__scanner--dialog__banner w-100 h-100 m-auto" src="/src/assets/imgs/svgs/barcode.svg" alt="banner image">
+      </div>
+
+      <div class="d-flex app__scanner--main__container w-100 h-100">
+        <!-- put scanner indeterminate progress-bar here -->
+        <!-- search preloader -->
+        <div class="app__scanner--main__loading--container d-flex w-100 h-100">
+          <img src="/src/assets/icons/svgs/search_24px_rounded-dark.svg" alt="search icon" class="my-auto ml-auto">
+          <span class="d-flex font-weight-bold ml-2 mr-auto my-auto">Searching...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
