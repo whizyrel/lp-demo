@@ -1,3 +1,9 @@
+.app__scanner--dialog__banner--container  {
+  background-image: url('/src/assets/imgs/yellow_shade_abstract.svg');
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
 .app__scanner--result__items--container {
   background-image: url('/src/assets/imgs/svgs/camera-white_shadow.svg');
   background-position: center;

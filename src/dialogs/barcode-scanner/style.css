@@ -39,6 +39,8 @@
   background-size: cover;
   background-position: center;
   background-clip: border-box;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 .app__scanner--dialog__banner {
