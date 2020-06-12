@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="d-flex w-100 h-100 app__settings--main__container px-3">
+    <div class="d-flex w-100 app__settings--main__top-bar pl-2 py-2">
+      <div class="d-flex my-auto h-100 app__settings--main__top-bar--back__button--container">
+        <img class="app__settings--main__top-bar--back__button my-auto mr-2" src="/src/assets/icons/svgs/chevron-left_black.svg" alt="back button image">
+
+        <span class="font-weight-bold my-auto mr-2">Back</span>
+      </div>
+    </div>
+
+    <main class="d-flex w-100 h-100 app__settings--main pt-5 pl-4">
+      <div class="d-flex app__settings--main__control">
+        <div class="d-flex app__settings--main__control--group">
+          <div class="d-flex app__settings--main__control__ribbon app__settings--main__control__ribbon--blue"></div>
+          <span class="font-weight-bold ml-2 my-auto">Devices</span>
+        </div>
+
+        <div class="d-flex app__settings--main__control--group">
+          <!-- add app__settings--main__control__ribbon--blue  -->
+          <div class="d-flex app__settings--main__control__ribbon"></div>
+          <span class="font-weight-bold ml-2 my-auto">Barcode Scanners</span>
+        </div>
+
+        <div class="d-flex app__settings--main__control--group">
+          <!-- add app__settings--main__control__ribbon--blue  -->
+          <div class="d-flex app__settings--main__control__ribbon"></div>
+          <span class="font-weight-bold ml-2 my-auto">Printers</span>
+        </div>
+      </div>
+
+      <div class="d-flex w-100 pl-3 app__settings--main__control--outlet">
+        <div class="d-flex w-100 app__settings--main__control--outlet__description">
+          <img class="my-auto" src="/src/assets/icons/svgs/settings.svg" alt="settings-icon">
+          <div class="d-flex w-100 app__settings--main__control--outlet__description--text ml-3">
+            <span class="font-weight-bold my-auto w-100">My Settings</span>
+            <span class="font-weight-light">List all devices added to this computer while this software is being used...</span>
+          </div>
+
+          <!-- clear all button -->
+          <img class="app__settings--main__control--outlet__clear__devices--icon ml-auto mr-3 my-auto" src="/src/assets/icons/svgs/trash-alt.svg" alt="trash-icon">
+        </div>
+
+        <div class="d-flex w-100 mt-3 app__settings--main__control--outlet__items-container">
+          <div class="d-flex w-100 app__settings--main__control--outlet__item p-2">
+            <img class="app__settings--main__control--outlet__item--default__image my-auto" src="/src/assets/imgs/svgs/printer-barcode-camera-settings-group_no-background.svg" alt="device icon">
+            <div class="d-flex my-auto ml-3 app__settings--main__control--outlet__item--details">
+              <span class="font-weight-bold">Device Name - Manufacturer's Name</span>
+              <span class="font-weight-bold">Device Product ID, Device Vendor ID</span>
+            </div>
+            <img class="mr-3 ml-auto app__settings--main__control--outlet__item--more" src="/src/assets/icons/svgs/ellipsis-v.svg" alt="more-icon">
+          </div>
+
+          <div class="d-flex w-100 app__settings--main__control--outlet__item p-2">
+            <img class="app__settings--main__control--outlet__item--default__image my-auto" src="/src/assets/imgs/svgs/printer-barcode-camera-settings-group_no-background.svg" alt="device icon">
+            <div class="d-flex my-auto ml-3 app__settings--main__control--outlet__item--details">
+              <span class="font-weight-bold">Omni Printer - Omni Company</span>
+              <span class="font-weight-bold">Device Vendor ID: 5000, Device's Product ID:2500</span>
+            </div>
+
+            <img class="mr-3 ml-auto app__settings--main__control--outlet__item--more" src="/src/assets/icons/svgs/ellipsis-v.svg" alt="more-icon">
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

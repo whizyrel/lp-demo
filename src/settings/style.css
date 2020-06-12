@@ -1,0 +1,147 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.app__settings--main__container {
+  background-color: #ffffff;
+  background-image: url('/src/assets/imgs/svgs/settings.svg');
+  background-size: contain;
+  background-position: right bottom;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  opacity: 70%;
+}
+
+.app__settings--main__container,
+.app__settings--main__control,
+.app__settings--main__control--outlet,
+.app__settings--main__control--outlet__items-container,
+.app__settings--main__control--outlet__item--details,
+.app__settings--main__control--outlet__description--text {
+  flex-direction: column;
+}
+
+.app__settings--main__top-bar,
+.app__settings--main__top-bar--back__button--container,
+.app__settings--main,
+.app__settings--main__control--outlet__description,
+.app__settings--main__control--outlet__item {
+  flex-direction: row;
+}
+
+.app__settings--main__top-bar {
+  width: inherit;
+  height: 40px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #ffffff;
+}
+
+.app__settings--main__top-bar--back__button--container {
+  width: fit-content;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+.app__settings--main__top-bar--back__button--container:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.app__settings--main__top-bar--back__button {
+  width: 10px;
+  height: 10px;
+}
+
+.app__settings--main {
+  flex-direction: row;
+}
+
+.app__settings--main__control {
+  width: 30%;
+  max-height: 40%;
+}
+
+.app__settings--main__control--group {
+  font-size: 12px;
+  height: 25px;
+  max-width: 80%;
+}
+
+.app__settings--main__control--group:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.app__settings--main__control--group__active {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.app__settings--main__control__ribbon {
+  width: 2px;
+  height: inherit;
+}
+
+.app__settings--main__control__ribbon--blue {
+  background-color: blue;
+}
+
+.app__settings--main__control--outlet__description {
+  font-size: 25px;
+}
+
+.app__settings--main__control--outlet__description span:last-child {
+  font-size: 13px;
+}
+
+.app__settings--main__control--outlet__description img {
+  width: 25px;
+  height: 40px;
+}
+
+.app__settings--main__control--outlet__clear__devices--icon {
+  width: 15px!important;
+  height: 15px!important;
+  cursor: pointer;
+}
+
+.app__settings--main__control--outlet__items-container {
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+.app__settings--main__control--outlet__item {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.app__settings--main__control--outlet__item:hover {
+  border-bottom: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.app__settings--main__control--outlet__item--default__image {
+  width: 50px;
+  height: 50px;
+}
+
+.app__settings--main__control--outlet__item--details {
+  font-size: 10px;
+}
+
+.app__settings--main__control--outlet__item--details span:first-child {
+  font-size: 15px;
+}
+
+.app__settings--main__control--outlet__item--more {
+  width: 10px;
+  height: 15px;
+}
+
+@media (min-width: 575px) {
+  .app__settings--main {
+    padding-left: 5rem!important;
+  }
+}
