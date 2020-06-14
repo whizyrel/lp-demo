@@ -1,0 +1,15 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.app__cart--dialog {
+  min-width: 320px;
+  width: 60%;
+  height: 70%;
+}
+
+.app__cart--dialog {
+  flex-direction: row;
+}
