@@ -17,12 +17,15 @@ body {
   border-radius: 8px 0 0 8px;
 }
 
-.app__cart--dialog {
+.app__cart--dialog,
+.app__cart--dialog__main--cart__item  {
   flex-direction: row;
 }
 
 .app__cart--dialog__main,
-.app__cart--dialog__main--top-bar {
+.app__cart--dialog__main--top-bar,
+.app__cart--dialog__main--items__container,
+.app__cart--dialog__main--cart__item--description {
   flex-direction: column;
 }
 
@@ -62,4 +65,52 @@ body {
   align-items: center;
   right: 49%;
   top: 25%;  
+}
+
+.app__cart--dialog__main--items__container {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.app__cart--dialog__main--cart__item {
+  font-size: 14px;
+}
+
+.app__cart--dialog__main--cart__item:last-child {
+  margin-bottom: 5px;
+}
+
+.app__cart--dialog__main--cart__item span {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.app__cart--dialog__main--cart__item:hover {
+  box-shadow: 0 2px 5px #afafaf;
+  border-radius: 5px;
+}
+
+.app__cart--dialog__main--cart__item--description {
+  width: 40%;
+}
+
+.app__cart--dialog__main--cart__item--description span:nth-child(2) {
+  font-size: 12px;
+}
+
+.app__cart--dialog__main--cart__item--control {
+  width: 12px;
+  height: 12px;
+}
+
+.app__cart--dialog__main--cart__item--control:hover {
+  cursor: pointer;
+}
+
+.app__cart--dialog__main--cart__item--control__quantity {
+  border: none;
+  width: 25px;
+  height: 30px;
+  background-color: #f5f5f5;
+  text-align: center;
 }
