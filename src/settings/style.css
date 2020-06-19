@@ -135,6 +135,11 @@ body {
   font-size: 15px;
 }
 
+.app__settings--main__control--outlet__item--badge {
+  width: 15px;
+  height: 15px
+}
+
 .app__settings--main__control--outlet__item--more {
   width: 10px;
   height: 15px;
