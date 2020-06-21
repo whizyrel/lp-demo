@@ -1,0 +1,162 @@
+body {
+  display: flex;
+}
+
+.app__sales--container,
+.app__sales--tab__body,
+.app__sales--tab__body--table__container,
+.app__sales--tab__body--table__body {
+  flex-direction: column;
+}
+
+.app__sales--container {
+  background-color: #f5f5f5;
+}
+
+.app__sales--tab__header--container,
+.app__sales--tab__body--table__content--group {
+  flex-direction: row;
+}
+
+.app__sales--tab__header--container {
+  height: 45px;
+  z-index: 100;
+}
+
+.app__sales--tab__header {
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  width: 140px;
+  font-family: Effra;
+}
+
+.app__sales--tab__header:after {
+  content: '';
+  position: absolute;
+  display: flex;
+  width: 18px;
+  transform: rotateY(45deg) rotateX(18deg);
+  height: 50px;
+  background-color: #ffffff;
+  margin-left: 120px;
+  margin-top: 0px;
+  z-index: -200;
+  border-top-right-radius: 9px;
+
+}
+
+.app__sales--tab__header--text {
+  font-size: 12px;
+  color: #800000;
+}
+
+.app__sales--tab__header--badge {
+  font-size: 11px;
+  width: 30px;
+  height: 20px;
+  background-color: #800000;
+  color: #ffffff;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__sales--tab__body {
+  background-color: #ffffff;
+  border-top-right-radius: 10px;
+  box-shadow: 0 0 3px 1px #eaeaea;
+  z-index: 50;
+}
+
+.app__sales--tab__header__active--indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #adadad;
+  border-radius: 50%;
+}
+
+.app__sales--tab__body--search__container {
+  height: 60px;
+}
+
+.app__sales--tab__body--search--input__container {
+  border-radius: 56px;
+  border: none;
+  background-color: #f5f5f5;
+  width: 300px;
+  font-family: Effra Light;
+}
+
+.app__sales--tab__body--search--input__container img {
+  width: 20px;
+  height: 20px;
+}
+
+.app__sales--tab__body--search--input__container img:last-child {
+  width: 25px;
+  height: 25px;
+}
+
+.app__sales--tab__body--search--input__container img:last-child:hover {
+  cursor: pointer;
+}
+
+.app__sales--tab__body--search--input {
+  border: none;
+  background-color: inherit;
+}
+
+/* .app__sales--tab__body--table__container { } */
+
+.app__sales--tab__body--table__header {
+  height: 35px;
+  background-color: #f0f0f0;
+  /* background-color: #fbfbfb; */
+  border-radius: 10px;
+}
+
+.app__sales--tab__body--table__content--group {
+  font-family: Effra;
+  font-size: 12px;
+  color: #800000;
+  width: calc(100% / 6);
+  max-width: calc(100% / 6);
+}
+
+.app__sales--tab__body--table__content--group img {
+  width: 10px;
+  height: 10px;
+}
+
+.app__sales--tab__body--table__content--group img:hover {
+  cursor: pointer;
+}
+
+.app__sales--tab__body--table__items {
+  height: 35px;
+  border-radius: 10px;
+}
+
+.app__sales--tab__body--table__body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.app__sales--tab__body--table__body 
+.app__sales--tab__body--table__items:nth-child(even) {
+  height: 35px;
+  /* background-color: #f0f0f0; */
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+
+.app__sales--tab__body--table__items:last-child {
+  margin: 0 0 2.5rem 0;
+}
+
+.app__sales--tab__body--table__items
+.app__sales--tab__body--table__content--group {
+  font-family: Effra Light;
+  color: #8e8e8e;
+}
