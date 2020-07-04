@@ -105,3 +105,24 @@ body {
 .app__jobs--list__item--more:hover {
     cursor: pointer;
 }
+
+.app__jobs--list__item--status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* printing status: failed */
+.app__jobs--list__item--status__red {
+    background-color: #880800;
+}
+
+/* printing status: success */
+.app__jobs--list__item--status__green {
+    background-color: #228b22;
+}
+
+/* printing status: prepared */
+.app__jobs--list__item--status__grey {
+    background-color: #f0f0f0;
+}
