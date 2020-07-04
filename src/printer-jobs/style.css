@@ -91,10 +91,6 @@
     height: 25px;
 }
 
-.app__jobs--list__item--details {
-    /* border-bottom: 1px solid #eaeaea; */
-}
-
 .app__jobs--list__item--details span {
     font-size: 13px;
 }
@@ -131,6 +127,20 @@
 
 .app__jobs--list__items--preview__container span {
     line-height: normal;
+}
+
+.app__jobs--list__items--control {
+    font-size: 10px;
+    height: 25px;
+}
+
+.app__jobs--list__items--control img {
+    width: 15px;
+    height: 15px;
+}
+
+.app__jobs--list__items--control img:hover {
+    cursor: pointer;
 }
 
 .app__jobs--list__items--preview__header {
@@ -217,6 +227,21 @@
     object-fit: cover;
 }
 
+.app__jobs--fab__icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 1rem;
+    right: 4.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0.1px #b3b2b2;
+}
+
+.app__jobs--fab__icon:hover {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 576px) {
     .app__jobs--list__items--container {
         max-width: 55%;
@@ -253,7 +278,8 @@
     }
 
     .app__jobs--list__banner,
-    .app__jobs--list__items--container {
+    .app__jobs--list__items--container,
+    .app__jobs--fab__icon {
         display: none!important;
     }
 
