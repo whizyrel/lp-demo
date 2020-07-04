@@ -1,26 +1,27 @@
-body {
-    width: 100vw;
-    height: 100vh;
-}
-
 .app__jobs--list__container,
 .app__jobs--list,
 .app__jobs--list__item--details,
-.app__jobs--list__items--container {
+.app__jobs--list__items--container,
+.app__jobs--list__items--preview__container {
     flex-direction: column;
 }
 
 .app__jobs--list__main,
-.app__jobs--list__item {
+.app__jobs--list__item,
+.app__jobs--list__items--preview__sales--header
+.app__jobs--list__items--preview__sales--body,
+.app__jobs--list__items--preview__sales--total {
     flex-direction: row;
 }
 
 .app__jobs--list__container {
     background-color: #f5f5f5;
     height: 100%;
+    overflow: hidden;
 }
 
 .app__jobs--list {
+    height: inherit;
     box-sizing: border-box;
     box-shadow: 1px 1px 1px 1px #eaeaea;
     border-top-right-radius: 8px;
@@ -42,6 +43,7 @@ body {
 
 .app__jobs--list__main {
     background-color: #ffffff;
+    height: calc(80%);
 }
 
 .app__jobs--list__items--container {
@@ -59,7 +61,7 @@ body {
 }
 
 .app__jobs--list__item {
-    height: 50px;
+    min-height: 50px;
 }
 
 .app__jobs--list__item:hover {
@@ -125,4 +127,146 @@ body {
 /* printing status: prepared */
 .app__jobs--list__item--status__grey {
     background-color: #f0f0f0;
+}
+
+.app__jobs--list__items--preview__container span {
+    line-height: normal;
+}
+
+.app__jobs--list__items--preview__header {
+    font-size: 20px;
+    /* max-width: 80%; */
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Effra;
+    word-wrap: break-word;
+}
+
+.app__jobs--list__items--preview__header--contact-address {
+    font-size: 13px;
+}
+
+.app__jobs--list__items--preview__header--contact-address,
+.app__jobs--list__items--preview__header--contact-number {
+    /* max-width: 80%; */
+    text-transform: capitalize;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-weight: 700;
+}
+
+.app__jobs--list__items--preview__header--contact-number {
+    font-size: 11px;
+}
+
+.app__jobs--list__items--preview__sales {
+    text-align: left;
+    font-size: 12px;
+}
+
+.app__jobs--list__items--preview__sales--header {
+    height: 30px;
+    background-color: #fcfcfc;
+}
+
+.app__jobs--list__items--preview__sales--header span {
+    text-align: center;
+}
+
+.app__jobs--list__items--preview__sales--header span,
+.app__jobs--list__items--preview__sales--body span {
+    font-size: 12px;
+    width: calc(100% / 4);
+    font-family: Effra;
+}
+
+.app__jobs--list__items--preview__sales--body span {
+    text-align: center;
+}
+
+.app__jobs--list__items--preview__sales--body span:first-of-type {
+    text-align: left;
+}
+
+.app__job--body__divider {
+    height: 1.5px;
+    background-color: #000;
+    font-size: 1px;
+}
+
+.app__jobs--list__items--preview__sales--total {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.app__jobs--list__items--preview__sales--VAT {
+    font-size: 9px;
+}
+
+.app__jobs--list__items--preview__sales--footer {
+    font-size: 10px;
+    text-align: center;
+}
+
+.app__jobs--list__items--preview__sales--barcode__icon {
+    width: 90px;
+    height: 40px;
+    object-position: center;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 576px) {
+    .app__jobs--list__items--container {
+        max-width: 55%;
+    }
+    
+    .app__jobs--list__items--preview__container {
+        width: 45%;
+        max-width: 45%;
+    }
+}
+
+@media print and (max-width: 303px){
+    body {
+        overflow: hidden;
+        height: fit-content;
+    }
+
+    @page {
+        size: 100%;
+    }
+
+    .app__jobs--list__container {
+        margin: 0!important;
+        padding: 0!important;
+        width: 82%!important;
+        height: fit-content;
+    }
+
+    .app__jobs--list {
+        width: 100%;
+        margin: auto!important;
+        padding: 0!important;
+        height: fit-content;
+    }
+
+    .app__jobs--list__banner,
+    .app__jobs--list__items--container {
+        display: none!important;
+    }
+
+    .app__jobs--list__items--preview__container {
+        padding: 0!important;
+        margin: 0!important;
+        width: 100%!important;
+        display: flex!important;
+        overflow: hidden;
+    }
+
+    .app__jobs--list__items--preview__header {
+        font-size: 20px;
+        /* max-width: 80%; */
+    }
 }
