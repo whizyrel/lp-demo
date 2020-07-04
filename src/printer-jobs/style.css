@@ -1,0 +1,107 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.app__jobs--list__container,
+.app__jobs--list,
+.app__jobs--list__item--details,
+.app__jobs--list__items--container {
+    flex-direction: column;
+}
+
+.app__jobs--list__main,
+.app__jobs--list__item {
+    flex-direction: row;
+}
+
+.app__jobs--list__container {
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.app__jobs--list {
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #eaeaea;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.app__jobs--list__banner {
+    height: 20%;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.app__jobs--list__banner--image {
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.app__jobs--list__main {
+    background-color: #ffffff;
+}
+
+.app__jobs--list__items--container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 60%;
+    max-width: 60%;
+}
+
+.app__jobs--list__items--preview__container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 40%;
+    max-width: 40%;
+}
+
+.app__jobs--list__item {
+    height: 50px;
+}
+
+.app__jobs--list__item:hover {
+    background-color: #f5f5f5;
+    /* box-shadow: 0 0 3px 1px #eaeaea; */
+    cursor: pointer;
+}
+
+.app__jobs--list__item:first-of-type {
+    margin-top: 1rem;
+}
+
+.app__jobs--list__item:last-of-type {
+    margin-bottom: 5rem;
+}
+
+.app__jobs--list__item--badge {
+    width: 5px;
+    height: 100%;
+    background-color: #00bfff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.app__jobs--list__item--printer__icon {
+    width: 25px;
+    height: 25px;
+}
+
+.app__jobs--list__item--details {
+    /* border-bottom: 1px solid #eaeaea; */
+}
+
+.app__jobs--list__item--details span {
+    font-size: 13px;
+}
+
+.app__jobs--list__item--more {
+    width: 15px;
+    height: 15px;
+}
+
+.app__jobs--list__item--more:hover {
+    cursor: pointer;
+}
