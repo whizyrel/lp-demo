@@ -1,0 +1,21 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.app__admin--home__header--container {
+    flex-direction: row;
+}
+
+.app__admin--home__header--container {
+    height: 60px;
+    position: absolute;
+    top: 0;
+}
+
+.app__admin--home__user--container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+}
