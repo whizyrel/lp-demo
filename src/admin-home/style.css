@@ -1,16 +1,26 @@
 body {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
-.app__admin--home__header--container {
+.app__admin--home__main--modules__container,
+.app__admin--home__header--container,
+.app__admin--home__main--module__row,
+.app__admin--home__main--module div {
     flex-direction: row;
+}
+
+.app__admin--home__main,
+.app__admin--home__main--modules__column {
+    flex-direction: column;
 }
 
 .app__admin--home__header--container {
     height: 60px;
     position: absolute;
     top: 0;
+    /* box-shadow: 0 0 2px 2px #f1f1f1; */
 }
 
 .app__admin--home__user--container {
@@ -18,4 +28,164 @@ body {
     height: 40px;
     border-radius: 50%;
     background-color: #f1f1f1;
+}
+
+.app__admin--home__main {
+    overflow: hidden;
+}
+
+.app__admin--home__main--modules__container {
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 95%;
+    padding: 20% 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.app__admin--home__main--modules__column {
+    width: 300px;
+    min-width: 300px;
+    box-sizing: border-box;
+    margin-right: 1rem;
+}
+
+.app__admin--home__main--modules__column:first-of-type {
+    margin-left: 100px;
+}
+
+.app__admin--home__main--modules__column:nth-last-of-type(1) {
+    margin-right: 0!important;
+}
+
+.app__row--hack {
+    visibility: collapse;
+    min-width: 10px;
+}
+
+.app__admin--home__main--module {
+    width: inherit;
+    box-sizing: border-box;
+    z-index: 5000;
+    color: #ffffff;
+}
+
+.app__admin--home__main--module__height--50p {
+    height: 50%;
+}
+
+.app__admin--home__main--module__height--25p {
+    height: 25%;
+}
+
+.app__admin--home__main--module__height--inherit {
+    height: inherit;
+}
+
+.app__admin--home__main--module__color--blue {
+    /* background-color: #4682a0; */
+    animation: 5s ease-out .5s infinite running alternate blue-pulse;
+}
+
+.app__admin--home__main--module__color--blue-1 {
+    background-color: #3a28c8;
+}
+
+.app__admin--home__main--module__color--red {
+    background-color: /* #8b0000 *//* #8f0000 */ #a40000; /* Dark Candy Apple Red */
+}
+
+.app__admin--home__main--module__color--green {
+    background-color: /* #8b0000 */#7db700;
+}
+
+.app__admin--home__main--module__color--purple {
+    background-color: #5946b2;
+}
+
+.app__admin--home__main--module__color--yellow {
+    /* background-color: #fcc41a; */
+    animation: 8s ease-in 1s infinite running alternate yellow-pulse;
+}
+
+.app__admin--home__main--module__row div {
+    width: 50%;
+}
+
+.app__admin--home__main--module__text {
+    font-family: Effra Light;
+    line-height: normal;
+}
+
+.app__admin--home__main--module__text--size-25 {
+    font-size: 25px;
+}
+
+.app__admin--home__main--module__text--size-15 {
+    font-size: 15px;
+}
+
+.app__admin--home__main--module__box:hover {
+    box-shadow: 0 0 2px 1px #f1f1f1;
+    cursor: pointer;
+    z-index: 1000;
+    transform: scale(1.01, 1.01);
+}
+
+.app__admin--home__main--module__icon {
+    /* transform: rotate(90deg); */
+    width: 15px;
+    height: 15px;
+}
+
+@media (min-width: 576px) {
+    .app__admin--home__main--modules__container {
+        padding: 10% 0;
+    }
+}
+
+@keyframes blue-pulse {
+    0% {
+        background-color: #301ebe;
+    }
+
+    25% {
+        background-color: #4682b4;
+    }
+
+    50% {
+        background-color: #4682a0;
+    }
+
+    75% {
+        color: #19027e;
+        background-color: #ffffff;
+    }
+
+    100% {
+        background-color: #4429bd;
+    }
+}
+
+@keyframes yellow-pulse {
+    0% {
+        background-color: #ffc209;
+    }
+
+    25% {
+        background-color: #fcd14f;
+    }
+
+    50% {
+        background-color: #ffcd35;
+    }
+
+    75% {
+        color: #d39e00;
+        background-color: #ffffff;
+    }
+
+    100% {
+        background-color: #fcc41a;
+    }
 }
