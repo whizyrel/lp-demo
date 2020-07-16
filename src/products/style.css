@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Effra Light;
+}
+
+.app__products--nav {
+    height: 50px;
+    border-color: #f5f5f5;
+    border-width: 1.3px;
+    border-style: solid;
+}
+
+.app__products--nav,
+.app__products--nav__group {
+    flex-direction: row;
+}
+
+.app__products--nav__group {
+    width: fit-content;
+    font-size: 12px;
+}
+
+.app__products--nav__item--separator {
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 50%;
+}
