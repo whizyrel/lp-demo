@@ -16,7 +16,7 @@
             <span class="d-flex app__products--nav__item--separator my-auto"></span>
         </div>
 
-        <div class="d-flex app__products--nav__group mx-2 h-100">
+        <div class="d-flex app__products--nav__group mr-2 h-100">
             <span class="d-flex font-weight-bold my-auto">Login/Logout</span>
         </div>
     </nav>
@@ -30,12 +30,135 @@
         </div>
 
         <div class="d-flex w-100 mt-2 app__products--table__container app__products--list--table__50h">
+            <div class="d-flex w-100 app__products--table__header">
+                <span class="font-weight-bold my-auto">ID#</span>
+                <span class="font-weight-bold my-auto">
+                    Name
+                    <img class="ml-1 my-auto" src="/src/assets/icons/svgs/arrow-down-thin.svg" alt="add-icon">
+                </span>
+                <span class="font-weight-bold my-auto">
+                    Price
+                    <img class="ml-1 my-auto" src="/src/assets/icons/svgs/arrow-down-thin.svg" alt="add-icon">
+                </span>
+                <span class="font-weight-bold my-auto">
+                    Category
+                    <img class="ml-1 my-auto" src="/src/assets/icons/svgs/arrow-down-thin.svg" alt="add-icon">
+                </span>
+                <span class="font-weight-bold my-auto">
+                    Product Line
+                    <img class="ml-1 my-auto" src="/src/assets/icons/svgs/arrow-down-thin.svg" alt="add-icon">
+                </span>
+                <span class="font-weight-bold my-auto">
+                    Weight
+                    <img class="ml-1 my-auto" src="/src/assets/icons/svgs/arrow-down-thin.svg" alt="add-icon">
+                </span>
+                <span class="font-weight-bold my-auto">
+                    Discount
+                    <img class="ml-1 my-auto" src="/src/assets/icons/svgs/arrow-down-thin.svg" alt="add-icon">
+                </span>
+                <span class="font-weight-bold my-auto">
+                    Time
+                    <img class="ml-1 my-auto" src="/src/assets/icons/svgs/arrow-down-thin.svg" alt="add-icon">
+                </span>
+                <span class="font-weight-bold my-auto">User</span>
+            </div>
 
+            <div class="d-flex w-100 h-100 app__products--table__body">
+                <div class="d-flex w-100 app__products--table__body--row py-2">
+                    <span class="d-flex my-auto"><input class="my-auto mx-2" type="checkbox"> 1</span>
+                    <span class="my-auto">Wisdom Toothbrush</span>
+                    <span class="my-auto">N250.00</span>
+                    <span class="my-auto">Home Care</span>
+                    <span class="my-auto">Unilever Plc.</span>
+                    <span class="my-auto">0.5kg</span>
+                    <span class="my-auto">3%</span>
+                    <span class="my-auto">12:00</span>
+                    <span class="my-auto">Israel</span>
+                </div>
+                <div class="d-flex w-100 app__products--table__body--row py-2">
+                    <span class="my-auto">2</span>
+                    <span class="my-auto">Mamador Oil</span>
+                    <span class="my-auto">N450.00</span>
+                    <span class="my-auto">Spices</span>
+                    <span class="my-auto">Mamador Nig. Plc.</span>
+                    <span class="my-auto">1kg</span>
+                    <span class="my-auto">4%</span>
+                    <span class="my-auto">12:10</span>
+                    <span class="my-auto">Israel</span>
+                </div>
+            </div>
+
+            <div class="d-flex w-100 app__products--table__footer">
+                <!-- <div class="d-flex mr-auto"> -->
+                    <span class="my-auto ml-2 d-flex p-1">499+</span>
+                    <!-- add a category, export as csv -->
+                    <p class="my-auto ml-2 mr-auto font-weight-bold">Products</p>
+                    <img class="my-auto ml-auto mr-2" src="/src/assets/icons/svgs/ellipsis-v.svg" alt="add-icon">
+                <!-- </div> -->
+            </div>
         </div>
 
         <div class="d-flex w-100 app__products--multi-table my-2">
-            <div class="d-flex ml-auto app__products--table__container"></div>
-            <div class="d-flex ml-2 mr-auto app__products--table__container"></div>
+            <div class="d-flex ml-auto app__products--table__container">
+                <div class="d-flex w-100 app__products--table__header">
+                    <span class="font-weight-bold my-auto">ID#</span>
+                    <span class="font-weight-bold my-auto">Name</span>
+                    <span class="font-weight-bold my-auto">Time</span>
+                    <span class="font-weight-bold my-auto">User</span>
+                </div>
+                <div class="d-flex w-100 h-100 app__products--table__body">
+                    <div class="d-flex w-100 app__products--table__body--row py-2">
+                        <span class="d-flex my-auto"><input class="my-auto mx-2" type="checkbox"> 1</span>
+                        <span class="my-auto">Category 1</span>
+                        <span class="my-auto">12:00</span>
+                        <span class="my-auto">Israel</span>
+                    </div>
+                    <div class="d-flex w-100 app__products--table__body--row py-2">
+                        <span class="my-auto">1</span>
+                        <span class="my-auto">Category 1</span>
+                        <span class="my-auto">12:00</span>
+                        <span class="my-auto">Israel</span>
+                    </div>
+                </div>
+                <div class="d-flex w-100 app__products--table__footer">
+                    <!-- <div class="d-flex mr-auto"> -->
+                        <span class="my-auto ml-2 d-flex p-1">99+</span>
+                        <!-- add a category, export as csv -->
+                        <p class="my-auto ml-2 mr-auto font-weight-bold">Categories</p>
+                        <img class="my-auto ml-auto mr-2" src="/src/assets/icons/svgs/ellipsis-v.svg" alt="add-icon">
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="d-flex ml-2 mr-auto app__products--table__container">
+                <div class="d-flex w-100 app__products--table__header">
+                    <span class="font-weight-bold my-auto">ID#</span>
+                    <span class="font-weight-bold my-auto">Name</span>
+                    <span class="font-weight-bold my-auto">Time</span>
+                    <span class="font-weight-bold my-auto">User</span>
+                </div>
+                <div class="d-flex w-100 h-100 app__products--table__body">
+                    <div class="d-flex w-100 app__products--table__body--row py-2">
+                        <span class="d-flex my-auto"><input class="my-auto mx-2" type="checkbox"> 1</span>
+                        <span class="my-auto">Product Line 1</span>
+                        <span class="my-auto">12:00</span>
+                        <span class="my-auto">Israel</span>
+                    </div>
+                    <div class="d-flex w-100 app__products--table__body--row py-2">
+                        <span class="my-auto">1</span>
+                        <span class="my-auto">Product Line 1</span>
+                        <span class="my-auto">12:00</span>
+                        <span class="my-auto">Israel</span>
+                    </div>
+                </div>
+                <div class="d-flex w-100 app__products--table__footer">
+                    <!-- <div class="d-flex mr-auto"> -->
+                        <span class="my-auto ml-2 d-flex p-1">99+</span>
+                        <!-- add a category, export as csv -->
+                        <p class="my-auto ml-2 mr-auto font-weight-bold">Product Lines</p>
+                        <img class="my-auto ml-auto mr-2" src="/src/assets/icons/svgs/ellipsis-v.svg" alt="add-icon">
+                    <!-- </div> -->
+                </div>
+            </div>
         </div>
     </main>
 
