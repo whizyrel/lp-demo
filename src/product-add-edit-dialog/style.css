@@ -3,21 +3,30 @@ body {
     height: 100vh;
 }
 
+* {
+    outline: none;
+}
+
 .lp--product-details__dialog {
     width: 320px;
-    height: 70%;
+    height: 60%;
     max-height: 70%;
-    box-shadow: 0 0 2px .5px #e1e1e1e1;
+    box-shadow: 0 0 50px 0.5px #e1e1e1;
     border-radius: 10px;
     background-color: #da3932;
 }
 
 .lp--product-details__dialog,
-.lp--products-details__dialog--body {
+.lp--products-details__dialog--body,
+.lp--products-details__dialog--form__group,
+.lp--products-details__store-status div,
+.lp--products-details__price-weight-discount div,
+.lp--products-details__category-product_line div {
     flex-direction: column;
 }
 
 .lp--products-details__dialog--header,
+.lp--products-details__dialog--form__group--row,
 .lp--products-details__dialog--footer {
     flex-direction: row;
 }
@@ -36,6 +45,14 @@ body {
 
 .lp--products-details__dialog--body {
     height: calc(100% - 50px - 45px);
+    color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.lp--products-details__store-status {
+    min-height: 70px;
+    font-size: 11px;
 }
 
 .lp--products-details__dialog--footer {
@@ -50,10 +67,58 @@ body {
     border: none;
     background-color: inherit;
     color: inherit;
+    border-radius: 0;
+}
+
+.lp--products-details__dialog--footer__buttons:first-of-type:focus,
+.lp--products-details__dialog--footer__buttons:first-of-type:hover {
     border-bottom-left-radius: inherit;
+    border-bottom-right-radius: 0;
+}
+
+.lp--products-details__dialog--footer__buttons:last-of-type:focus,
+.lp--products-details__dialog--footer__buttons:last-of-type:hover {
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: inherit;
 }
 
-.lp--products-details__dialog--footer__buttons:hover {
+.lp--products-details__dialog--footer__buttons:hover,
+.lp--products-details__dialog--footer__buttons:focus {
     font-weight: 900;
+    background-color: #ac2c2c;
+    color: #fff;
+    outline: none;
+}
+
+.lp--products-details__store-status--input__field {
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid #ac2c2c;
+    color: #ffffff;
+    width: calc(100% - 1rem);
+}
+
+.lp--products-details__price-weight-discount,
+.lp--products-details__category-product_line {
+    font-size: 12px;
+}
+
+.lp--products-details__price-weight-discount div {
+    width: calc(100% / 3);
+}
+
+.lp--products-details__category-product_line {
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: inherit;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: inherit;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: inherit;
 }

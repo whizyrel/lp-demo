@@ -16,7 +16,49 @@
                 <span class="d-flex my-auto mx-auto font-weight-bold lp--products-details__dialog--header__title">Add/Edit a Product</span>
             </div>
 
-            <div class="d-flex w-100 lp--products-details__dialog--body"></div>
+            <div class="d-flex w-100 lp--products-details__dialog--body px-2">
+                <div class="w-100 d-flex lp--products-details__dialog--form__group lp--products-details__dialog--form__group--row lp--products-details__store-status">
+                    <div class="d-flex w-50 my-auto">
+                        <span class="font-weight-bold mt-2 mr-auto">Is this product available?</span>
+                        <input class="mt-1 mb-auto mr-1 d-flex lp--products-details__store-status--input__field" type="text" placeholder="On/Off">
+                    </div>
+                    <div class="d-flex w-50 my-auto">
+                        <span class="font-weight-bold mt-2 mr-auto">What store owns this product?</span>
+                        <input class="mt-1 mb-auto d-flex  lp--products-details__store-status--input__field" type="text" placeholder="product's store">
+                    </div>
+                </div>
+
+                <div class="w-100 d-flex lp--products-details__dialog--form__group mb-2">
+                    <span class="font-weight-bold mt-2 mr-auto">Product's Name</span>
+                    <input class="mt-1 mb-auto d-flex lp--products-details__store-status--input__field" type="text" placeholder="e.g Indomie Chicken">
+                </div>
+
+                <div class="w-100 d-flex mb-2 lp--products-details__dialog--form__group lp--products-details__dialog--form__group--row lp--products-details__price-weight-discount">
+                    <div class="d-flex my-auto">
+                        <span class="font-weight-bold mt-2 mr-auto">Price</span>
+                        <input class="mt-1 mb-auto d-flex lp--products-details__store-status--input__field" type="text" min="5" value="5" placeholder="how much?">
+                    </div>
+                    <div class="d-flex my-auto">
+                        <span class="font-weight-bold mt-2 mr-auto">Weight</span>
+                        <input class="mt-1 mb-auto d-flex lp--products-details__store-status--input__field" type="number" min="0" value="0" placeholder="how much weight">
+                    </div>
+                    <div class="d-flex my-auto">
+                        <span class="font-weight-bold mt-2 mr-auto">Discount (in %)</span>
+                        <input class="mt-1 mb-auto d-flex lp--products-details__store-status--input__field" type="number" max="100" min="0" value="0" placeholder="discount in %">
+                    </div>
+                </div>
+
+                <div class="w-100 d-flex mb-2 lp--products-details__dialog--form__group lp--products-details__dialog--form__group--row lp--products-details__category-product_line">
+                    <div class="d-flex w-50">
+                        <span class="d-flex font-weight-bold mt-2">Category</span>
+                        <input class="mt-1 mb-auto d-flex lp--products-details__store-status--input__field" type="text" placeholder="choose category">
+                    </div>
+                    <div class="d-flex w-50">
+                        <span class="d-flex font-weight-bold mt-2 mr-auto">Product Line</span>
+                        <input class="mt-1 mb-auto d-flex lp--products-details__store-status--input__field" type="text" placeholder="choose product line">
+                    </div>
+                </div>
+            </div>
 
             <div class="d-flex w-100 lp--products-details__dialog--footer">
                 <button class="d-flex w-50 h-100 lp--products-details__dialog--footer__buttons">
