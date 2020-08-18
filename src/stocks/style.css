@@ -5,6 +5,10 @@ body {
 
 .lp--stock-container {
     background: linear-gradient(#ffffff, #fff 3%, #e0e0ff);
+}
+
+.lp--stock-container,
+.lp--stock__main--container {
     flex-direction: column;
 }
 
@@ -26,3 +30,8 @@ body {
     width: 450px;
     border: 0;
 }
+
+.lp--stock__main--container {
+    height: calc(100% - 59px);
+}
+
