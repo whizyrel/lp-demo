@@ -1,5 +1,11 @@
 body {
-    background: linear-gradient(#ffffff, #fff 20%, #e0e0ff);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.lp--stock-container {
+    background: linear-gradient(#ffffff, #fff 3%, #e0e0ff);
+    flex-direction: column;
 }
 
 .lp--stock__top--container {
