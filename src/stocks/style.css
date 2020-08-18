@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(#ffffff, #fff 20%, #e0e0ff);
+}
+
+.lp--stock__top--container {
+    flex-direction: row;
+}
+
+.lp--stock__top--container {
+    height: 59px;
+}
+
+.lp--stock__search--container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 2px .5px #b1b1b1;
+}
+
+.lp--stock__search-input {
+    width: 450px;
+    border: 0;
+}
