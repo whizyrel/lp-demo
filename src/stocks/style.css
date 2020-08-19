@@ -40,8 +40,8 @@ body {
 
 .lp--stock__list--wrapper {
     flex-wrap: wrap;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     max-height: 100%;
 }
 
@@ -117,3 +117,32 @@ body {
     color: #ffffff;
 }
 
+.svg--icon * {
+    width: inherit;
+    height: inherit;
+}
+
+.svg--icon--sm {
+    width: 24px;
+    height: 24px;
+}
+
+.svg--icon--xs {
+    width: 18px;
+    height: 18px;
+}
+
+.lp--stock__orderby-btn {
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    box-shadow: 0 0 2px 0.5px #676767;
+    font-size: 13px;
+    background-color: inherit;
+}
+
+.lp--stock__orderby-btn:hover,
+.lp--stock__orderby-btn:active,
+.lp--stock__orderby-btn:active {
+    outline: 0;
+}
