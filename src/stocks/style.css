@@ -81,6 +81,10 @@ body {
     line-height: normal;
 }
 
+.lp--stock__list--item div span:first-of-type {
+    width: 80%;
+}
+
 .lp--stock__list--item div span:last-of-type {
     color: #aba9a9;
     font-size: 12px;
