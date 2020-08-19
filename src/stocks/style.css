@@ -4,15 +4,18 @@ body {
 }
 
 .lp--stock-container {
-    background: linear-gradient(#ffffff, #fff 3%, #e0e0ff);
+    background: linear-gradient(#ffffff, #fff 3%, #fbfbff);
 }
 
 .lp--stock-container,
-.lp--stock__main--container {
+.lp--stock__main--container,
+.lp--stock__list--wrapper,
+.lp--stock__list--item div {
     flex-direction: column;
 }
 
-.lp--stock__top--container {
+.lp--stock__top--container,
+.lp--stock__list--item {
     flex-direction: row;
 }
 
@@ -33,5 +36,84 @@ body {
 
 .lp--stock__main--container {
     height: calc(100% - 59px);
+}
+
+.lp--stock__list--wrapper {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.lp--stock__list--item {
+    width: 40%;
+    max-width: 40%;
+    min-height: 80px;
+}
+
+.lp--stock__list--item:hover {
+    cursor: pointer;
+}
+
+.lp--stock__list--item:nth-child(odd) {
+    margin-left: 0;
+}
+
+.lp--stock__list--item__badge {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px 0.5px #cecece;
+}
+
+.lp--stock__list--item__badge svg {
+    fill: currentColor;
+    transform: rotate(-45deg);
+    margin: auto;
+}
+
+.lp--stock__list--item div {
+    width: calc(100% - 50px);
+}
+
+.lp--stock__list--item div span {
+    line-height: normal;
+}
+
+.lp--stock__list--item div span:last-of-type {
+    color: #aba9a9;
+    font-size: 12px;
+}
+
+/* badges */
+.lp--stock__list--item__badge--red {
+    background-color: #800800;
+    color: #ffffff;
+}
+
+.lp--stock__list--item__badge--black {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.lp--stock__list--item__badge--white {
+    background-color: inherit;
+    color: #9c9c9c;
+}
+
+.lp--stock__list--item__badge--blue {
+    background-color: #243685;
+    color: #ffffff;
+}
+
+.lp--stock__list--item__badge--pink {
+    background-color: #d84779;
+    color: #ffffff;
+}
+
+.lp--stock__list--item__badge--light-red {
+    background-color: #eb3e37;
+    color: #ffffff;
 }
 
